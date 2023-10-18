@@ -1,10 +1,10 @@
-type Command = 'add' | 'substract' | 'multiply' | 'divide' | 'remainder';
+type Command = 'add' | 'subtract' | 'multiply' | 'divide' | 'remainder';
 
 function calculate(command: Command, a: number, b: number): number {
   switch (command) {
     case 'add':
       return a + b;
-    case 'substract':
+    case 'subtract':
       return a - b;
     case 'multiply':
       return a * b;
@@ -18,7 +18,7 @@ function calculate(command: Command, a: number, b: number): number {
 }
 
 console.log(calculate('add', 10, 10));
-console.log(calculate('substract', 10, 10));
+console.log(calculate('subtract', 10, 10));
 console.log(calculate('multiply', 10, 10));
 console.log(calculate('divide', 10, 10));
 console.log(calculate('remainder', 10, 10));
